@@ -1,0 +1,202 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+header{
+    display:flex;
+    justify-content: space-between;
+    background-color: rgb(255, 255, 255);
+    height: 10vh;
+}
+.login{
+    display: flex;
+    flex-direction: row;
+    margin-left: 100px;
+}
+.login a:hover{
+    background-color: rgb(4, 165, 4);
+    color: white;
+    transition: 0.5s;
+}
+.login a{
+    display: flex;
+    flex-direction: row;
+    border: 1px solid rgb(0, 0, 0);
+    margin: 15px;
+    padding: 10px 10px;
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    border-color:rgb(148, 148, 148);
+}
+.fa-sharp{
+    margin-right: 8px;
+}
+.logo{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-right: 100px;
+}
+
+.logo img{
+    width: 200px;
+    height: 40px;
+}
+.fa-bars{
+    font-size: 28px;
+    color: black;
+}
+
+section{
+    background-color: #d9d9d99f;
+    height: 90vh;
+    position: relative;
+}
+.one{
+    height: 500px;
+    width: 600px;
+    background-color: white;
+    position: absolute;
+    top: 15%;
+    left: 30%;
+}
+.one h1{
+    margin: 20px 10px;
+}
+form{
+    display: flex;
+    flex-direction: row;
+}
+input{
+    height: 40px;
+}
+label{
+    margin-left: 10px;
+}
+.part1{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.part1 input{
+    margin: 0px 10;
+    width: 200px;
+}
+.part2{
+    display: flex;
+    flex-direction: column;
+    margin-top: 30px;
+}
+.part2 input{
+    width: 95%;
+    margin-left: 15px;
+}
+.E_P{
+    display: flex;
+    flex-direction: column;
+}
+.check{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-top: 45px;
+    font-size: 18px;
+}
+input[type="checkbox"]{
+    width: 18px;
+    margin-left: 5px;
+}
+input::placeholder{
+    font-size: 15px;
+}
+input[type="submit"]{
+    height: 40px;
+    width: 150px;
+    background-color:rgba(0, 128, 0, 0.865);
+    border: none;
+    color: white;
+    margin-left: 37%;
+    margin-top: 10%;
+}
+@media only screen and (max-width:600px){
+    .login{
+        margin-left: 10px;
+    }
+    .logo{
+        display: none;
+    }
+    .one{
+        height: 540px;
+        width: 300px;
+        position: absolute;
+        top: 5%;
+        left: 7%;
+    }
+    form{
+        display: flex;
+        flex-direction: column;
+    }
+    input{
+        height: 40px;
+    }
+    .part1{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .FN{
+        position: absolute;
+        left: 4px;
+        top: 75px;
+    }
+    .N{
+        position: absolute;
+        left: 5px;
+        top: 145px;
+    }
+    .part1 input{
+        margin: 10px 10px 0px 0;
+        width: 90%;
+    }
+    .part2{
+        display: flex;
+        flex-direction: column;
+        margin-top: 20px;
+    }
+    .part2 input{
+        width: 90%;
+        margin-left: 15px;
+    }
+    .E_P{
+        display: flex;
+        flex-direction: column;
+    }
+    .check{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        margin-top: 30px;
+        font-size: 18px;
+        position: relative;
+    }
+    input[type="checkbox"]{
+        width: 20px;
+        position: absolute;
+        top: 25%;
+        right: 50px;
+    }
+    input::placeholder{
+        font-size: 15px;
+    }
+    input[type="submit"]{
+        height: 40px;
+        width: 150px;
+        background-color:rgba(0, 128, 0, 0.865);
+        border: none;
+        color: white;
+        margin-left: 27%;
+    }
+}
